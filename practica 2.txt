@@ -1,0 +1,121 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float ton, oz, lb, micrgramos, tg;
+	int pes = 0;
+	float kgs;
+	int distancia;
+	float in, ft, cm, nm, ly;
+	float unidad;
+	int kms = 0;
+	int peso = 0;
+	int opcion = 0;
+	float cantidad;
+	float dolar, euro, yuan;
+	cout << "ingrese la opcion que desea realizar 1_CONVERSOR DE MONEDAS 2- CONVERSOR DE DISTANCIA 3-CONVERSOR KGS,PESO" << endl;
+	cin >> opcion;
+	switch (opcion)
+	{
+	case 1:cout << "conversor de monedas" << endl;
+		cout << "ingrese cantidad en pesos mexicanos" << endl;
+		cin >> cantidad;
+		cout << "a que peso desea convertirlo 1-DOLAR,2-EURO,3-YUAN" << endl;
+		cin >> peso;
+		switch (peso)
+		{
+		case 1:cout << "dolar" << endl;
+			dolar = (cantidad * 18.98);
+			cout << "la cantidad en dolar es" << dolar << endl;
+			break;
+		case 2:cout << "euro" << endl;
+			euro = (cantidad * 20.58);
+			cout << "la cantidad en euros es" << euro << endl;
+			break;
+		case 3:cout << "yuan" << endl;
+			yuan = (cantidad * 2.8);
+			cout << "la cantidad en yuanes es" << yuan << endl;
+			break;
+		default:cout << "error" << endl;
+		}
+
+		break;
+
+	case 2:cout << "conversor distancia" << endl;
+		cout << "ingresar  kms" << endl;
+		cin >> kms;
+		cout << "a que unidad desea convertirlo 1-in 2-ft,3-cm,4-nm,5-ly" << endl;
+		cin >> distancia;
+		switch (distancia)
+		{
+		case 1:cout << "in" << endl;
+			in = (kms * 39370);
+			cout << "la distancia en in es de :" << in << endl;
+			break;
+		case 2:cout << "ft" << endl;
+			ft = (kms * 3281);
+			cout << "la distancia en ft es de " << ft << endl;
+			break;
+		case 3:cout << "cm" << endl;
+			cm = (kms * 100000);
+			cout << "la distancia en cm es de" << cm << endl;
+			break;
+		case 4:cout << "nm" << endl;
+			nm = (kms * 1000000000000);
+			cout << "la distancia de kms a nm es de" << nm << endl;
+			break;
+		case 5:cout << "ly" << endl;
+			ly = (kms * 9460700000000);
+			cout << "la distancia de kms a ly es de" << ly << endl;
+			break;
+		default:cout << "error" << endl;
+		}
+		break;
+	case 3:cout << "conversor kgs,peso" << endl;
+		cout << "ingresar kg" << endl;
+		cin >> kgs;
+		cout << "seleccione la opcion a la que desee convertirlo 1-Ton,2-oz,3-lb,4-micrgramos,5-tg" << endl;
+		cin >> pes;
+		switch (pes)
+		{
+		case 1:cout << "ton" << endl;
+			ton = (kgs / 907.2);
+			cout << "el peso de kg a ton es de" << ton << endl;
+			break;
+		case 2:cout << "oz" << endl;
+			oz = (kgs * 35.274);
+			cout << "el peso de kgs a oz es de" << oz << endl;
+			break;
+		case 3:cout << "lb" << endl;
+			lb = (kgs * 2.205);
+			cout << "el peso de kgs a lb es de" << lb << endl;
+			break;
+		case 4:cout << "micrgramos" << endl;
+			micrgramos = (kgs * 1000000000);
+			cout << "el peso de kgs a micrgramos es de" << micrgramos << endl;
+			break;
+		case 5:cout << "tg" << endl;
+			tg = (kgs / 1000000000000);
+			cout << "el peso de kgs a tg es de" << tg << endl;
+
+		
+
+
+
+
+
+
+
+
+		default:
+			break;
+		}
+		
+		default:
+		break;
+	}
+
+      
+
+}
